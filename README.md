@@ -6,3 +6,7 @@ The repository consists of:
 - Prototyping code of different functionality (not everything, since some where worked into the final code)
 - json file containing NodeRed flow
 - Cad Files
+
+For the Node-RED flow to function, the following packages must be installed: 
+- node-red-dashboard
+- node-red-node-ui-list
