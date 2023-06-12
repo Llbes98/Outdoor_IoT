@@ -458,18 +458,6 @@ void stringToHex(const String& inputString, char* hexBuffer) {
   hexBuffer[strLength * 2] = '\0';  // Null-terminate the hex string
 }
 
-
-void hexToAscii(const String& hexString, String& asciiString) {
-  int stringLength = hexString.length();
-  asciiString = "";
-
-  for (int i = 0; i < stringLength; i += 2) {
-    String hexByte = hexString.substring(i, i + 2);
-    int decimalValue = strtol(hexByte.c_str(), NULL, 16);
-    asciiString += (char)decimalValue;
-  }
-}
-
 // This function converts a given hexadecimal string to its ASCII representation.
 void hexToAscii(const String& hexString, String& asciiString) {
   int stringLength = hexString.length();  // Get the length of the hexadecimal string
