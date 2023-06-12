@@ -114,7 +114,7 @@ void reconnect() {
       // Subscribe or resubscribe to a topic
       // You can subscribe to more topics (to control more LEDs in this example)
       client.subscribe("Questions");
-      client.subscribe("GameMode");
+      client.subscribe("Mode");
       client.subscribe("EndGame");
     } else {
       Serial.print("failed, rc=");
